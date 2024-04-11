@@ -1,4 +1,4 @@
-<h1 align="center" id="title">ioon - React Native</h1>
+<h1 align="center" id="title">DynamicInput - React Native</h1>
 
 <p align="center"><img src="https://socialify.git.ci/isaaholic/ioon-rn/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
 
@@ -10,7 +10,8 @@
 
 Here're some of the project's best features:
 
-*   ioon-rn-dynamicinput
+*   ioon-rn-dynamicinput - v1.0.0
+
 
 <h2>🛡️ License:</h2>
 

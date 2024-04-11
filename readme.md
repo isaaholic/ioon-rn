@@ -4,13 +4,11 @@
 
 <p id="description">ioon is UI Kit for creating Modern and Dynamic React Native Application</p>
 
-  
-  
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
 
-*   ioon-rn-dynamicinput
+- ioon-rn-dynamicinput - v1.0.0
 
 <h2>🛡️ License:</h2>
 
