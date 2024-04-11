@@ -1,0 +1,15 @@
+{
+  "name": "ioon-rn-dynamicinput",
+  "version": "0.1.0",
+  "description": "Dynamic Input for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "isaaholic",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.6"
+  }
+}
