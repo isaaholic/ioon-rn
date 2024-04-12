@@ -1,5 +1,36 @@
-import { View, Text, TextInput, ScrollView, Dimensions } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  ScrollView,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import React, { useState } from "react";
+
+const CloseIcon = ({ height, color }) => {
+  return (
+    <View style={{ flexDirection: "row" }}>
+      <View
+        style={{
+          width: 1.5,
+          height: height ?? 12,
+          backgroundColor: color ?? "white",
+          transform: [{ rotate: "45deg" }],
+        }}
+      ></View>
+      <View
+        style={{
+          width: 1.5,
+          height: height ?? 12,
+          backgroundColor: color ?? "white",
+          marginLeft: -2,
+          transform: [{ rotate: "-45deg" }],
+        }}
+      ></View>
+    </View>
+  );
+};
 
 const DynamicInput = ({
   style,
@@ -10,6 +41,8 @@ const DynamicInput = ({
   placeholderStyle,
   roundedItem,
   itemColor,
+  btnHeight,
+  btnColor,
 }) => {
   const [input, setInput] = useState("");
 
@@ -49,6 +82,7 @@ const DynamicInput = ({
             {data?.map((item, index) => {
               return (
                 <View
+                  key={index}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
@@ -61,6 +95,23 @@ const DynamicInput = ({
                   }}
                 >
                   <Text style={{ color: "#FFF", ...textStyle }}>{item}</Text>
+                  <TouchableOpacity
+                    style={{
+                      backgroundColor: "transparent",
+                      marginLeft: 10,
+                      width: 15,
+                      height: 15,
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                    onPress={() => {
+                      console.log("sdasdasd");
+                      set((preVal) => preVal.filter((i) => i !== item));
+                    }}
+                  >
+                    <CloseIcon color={btnColor} height={btnHeight} />
+                  </TouchableOpacity>
                 </View>
               );
             })}

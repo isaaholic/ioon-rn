@@ -1,18 +1,72 @@
-<h1 align="center" id="title">DynamicInput - React Native</h1>
 
-<p align="center"><img src="https://socialify.git.ci/isaaholic/ioon-rn/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+# ioon-rn-DynamicInput
 
-<p id="description">ioon is UI Kit for creating Modern and Dynamic React Native Application</p>
-
-  
-  
-<h2>🧐 Features</h2>
-
-Here're some of the project's best features:
-
-*   ioon-rn-dynamicinput - v1.0.0
+Dynamic Input Component for Modern React Native Applications
 
 
-<h2>🛡️ License:</h2>
 
-This project is licensed under the MIT
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Installation
+
+Install ioon-rn-dynamicinput with npm
+
+```bash
+  npm i ioon-rn-dynamicinput
+```
+
+and import
+
+```javascript
+import { useState } from "react";
+import { View } from "react-native";
+import DynamicInput from "ioon-rn-dynamicinput";
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingHorizontal: 25,
+      }}
+    >
+      <DynamicInput placeholder="Some text..." set={setData} data={data} />
+    </View>
+  );
+}
+```
+## Demo
+
+![demo1](https://i.ibb.co/bv7DBD5/photo-2024-04-12-13-57-42.jpg)
+![demo2](https://i.ibb.co/N6JRzXb/photo-2024-04-12-13-57-38.jpg)
+
+
+## Props
+
+| style       | StyleProp              | Style of View                    |
+|-------------|------------------------|----------------------------------|
+| textStyle   | StyleProp              | Style of Text of Dynamic Input   |
+| placeholder | string                 | placeholder of Text              |
+| data        | array (useState)       | State of Dynamic Data            |
+| set         | function (useState)    | Function used to update the data |
+| roundedItem | AnimatableNumericValue | Border Radius of Dynamic Item    |
+| itemColor   | ColorValue             | Background Color of Dynamic Item |
+| btnHeight   | DimensionValue         | Height of Close Button           |
+| btnColor    | ColorValue             | Color of Close Button            |
+
+## Authors
+
+- [@isaaholic](https://www.github.com/isaaholic)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
