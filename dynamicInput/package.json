@@ -1,6 +1,6 @@
 {
   "name": "ioon-rn-dynamicinput",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Dynamic Input for React Native",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,18 @@
   "peerDependencies": {
     "react": "18.2.0",
     "react-native": "0.73.6"
-  }
+  },
+  "keywords": [
+    "mobile",
+    "component",
+    "ios",
+    "android",
+    "expo",
+    "reactnative",
+    "react native",
+    "native",
+    "input",
+    "dynamicinput",
+    "dynamic"
+  ]
 }
