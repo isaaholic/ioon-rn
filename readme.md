@@ -8,7 +8,7 @@
 
 Here're some of the project's best features:
 
-- ioon-rn-dynamicinput - v1.1.0
+- ioon-rn-dynamicinput - v1.1.2
 
 <h2>🛡️ License:</h2>
 

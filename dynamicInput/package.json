@@ -1,6 +1,6 @@
 {
   "name": "ioon-rn-dynamicinput",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Dynamic Input for React Native",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,8 @@
     "react": "18.2.0",
     "react-native": "0.73.6"
   },
+  "repository": "isaaholic/ioon-rn",
+  "homepage": "https://github.com/isaaholic/ioon-rn/tree/main/dynamicInput",
   "keywords": [
     "mobile",
     "component",
